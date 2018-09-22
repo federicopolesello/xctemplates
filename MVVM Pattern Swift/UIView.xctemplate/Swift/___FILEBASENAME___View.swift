@@ -9,11 +9,12 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___Delegate
+@objc protocol ___FILEBASENAMEASIDENTIFIER___Delegate
 {
-    
+    // @objc optional func didSelectElement
 }
 
+@IBDesignable
 class ___FILEBASENAMEASIDENTIFIER___: UIView
 {
 
