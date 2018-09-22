@@ -12,7 +12,11 @@ import UIKit
 extension ___VARIABLE_productName:identifier___View : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 {
     
-    //  MARK: UICollectionViewDataSource
+    /*
+     ****************
+     MARK: UICollectionViewDataSource
+     ****************
+     */
     
     func numberOfSections(in collectionView: UICollectionView) -> Int
     {
@@ -38,7 +42,11 @@ extension ___VARIABLE_productName:identifier___View : UICollectionViewDelegate, 
     }
     
     
-    //  MARK: UICollectionViewDelegate
+    /*
+     ****************
+     MARK: UICollectionViewDelegate
+     ****************
+     */
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath)
     {
@@ -49,7 +57,11 @@ extension ___VARIABLE_productName:identifier___View : UICollectionViewDelegate, 
     }
     
     
-    //  MARK: UICollectionViewDelegateFlowLayout
+    /*
+     ****************
+     MARK: UICollectionViewDelegateFlowLayout
+     ****************
+     */
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
