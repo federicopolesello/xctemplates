@@ -28,8 +28,7 @@ class ___FILEBASENAMEASIDENTIFIER___ : Coordinator
         self.window = window
     }
     
-    func start()
-    {
+    func start(presentationMode:EnumControllerPresentationMode, parent:UIViewController?) {
         
     }
     
