@@ -9,11 +9,6 @@
 
 import UIKit
 
-protocol ___FILEBASENAMEASIDENTIFIER___Delegate
-{
-    
-}
-
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController
 {
     
@@ -29,8 +24,14 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController
      CONST & VARIABLES
      *********
      */
-    var viewModel: ___VARIABLE_productName:identifier___ViewModel? = nil
-    var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
+    var viewModel: ___VARIABLE_productName:identifier___ViewModelProtocol? {
+        willSet {
+            viewModel?.viewDelegate = nil
+        }
+        didSet {
+            viewModel?.viewDelegate = self
+        }
+    }
     
     
     /*
@@ -75,11 +76,6 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController
         
         self.setUIOnWillDisappear()
         self.setBusinessLogicOnWillDisappear()
-        
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
         
     }
 
@@ -153,3 +149,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController
     
 }
 
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___ViewModelViewDelegate
+{
+    
+    // MARK: ___VARIABLE_productName:identifier___ViewModelViewDelegate
+    
+}
