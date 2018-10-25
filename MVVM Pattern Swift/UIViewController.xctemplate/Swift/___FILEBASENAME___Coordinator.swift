@@ -12,23 +12,45 @@ import UIKit
 
 protocol ___FILEBASENAMEASIDENTIFIER___Delegate {
     
-    
-    
 }
 
 class ___FILEBASENAMEASIDENTIFIER___ : Coordinator
 {
     
-    //MARK: LOCAL METHODS
-    var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
+    /*****************************
+     MARK: UI COMPONENTS
+     ****************************/
     let window: UIWindow
     
+    
+    /*****************************
+     CONST & VARIABLES
+     ****************************/
+    var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
+    
+    
+    /*****************************
+     MARK: CUSTOM INIT
+     ****************************/
     init(window: UIWindow)
     {
         self.window = window
     }
     
-    func start(presentationMode:EnumControllerPresentationMode, parent:UIViewController?) {
+    
+    /*****************************
+     MARK: PRIVATE METHODS
+     ******************************/
+    
+    
+    /*****************************
+     MARK: PUBLIC METHODS
+     ****************************/
+    func start(fromController controller:UIViewController?, withPresentationMode presentationMode:EnumControllerPresentationMode) {
+        
+    }
+    
+    func finish(fromController controller:UIViewController, withPopMode popMode:EnumControllerPopMode) {
         
     }
     

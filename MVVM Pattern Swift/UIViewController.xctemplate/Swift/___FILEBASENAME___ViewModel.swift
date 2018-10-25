@@ -9,68 +9,73 @@
 
 import Foundation
 
-// Talk with view
-protocol ___FILEBASENAMEASIDENTIFIER___ViewDelegate: class
-{
+// To talk with the view
+protocol ___FILEBASENAMEASIDENTIFIER___ViewDelegate: class {
     
 }
 
-// Talk with coordinator
-protocol ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate: class
-{
+// To talk with the coordinator
+protocol ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate: class {
     
 }
 
+// ViewModel protocol
 protocol ___FILEBASENAMEASIDENTIFIER___Protocol
 {
     
-    // MARK: VARIABLES
+    /*****************************
+     MARK: CONST & VARIABLES
+     ****************************/
     var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate? { get set }
     var coordinatorDelegate: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate? { get set}
     var model: ___VARIABLE_productName:identifier___ModelProtocol? { get set }
     
-    // MARK: METHODS
-    
+    /*****************************
+     MARK: PUBLIC METHODS
+     ****************************/
+    init(model: ___VARIABLE_productName:identifier___ModelProtocol, coordinator:___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate)
     
 }
 
 class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol
 {
 
-    /*
-     ****************
-     MARK: VARIABLES
-     ****************
-     */
+    /*****************************
+     MARK: CONST & VARIABLES
+     ****************************/
     var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate?
     var coordinatorDelegate: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?
-    var model: ___VARIABLE_productName:identifier___ModelProtocol?
-    
-    
-    /*
-     ****************
-     MARK: CUSTOM INIT
-     ****************
-     */
-    init(model: ___VARIABLE_productName:identifier___ModelProtocol, coordinator:___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate) {
-        self.model = model
-        self.coordinatorDelegate = coordinator
+    var model: ___VARIABLE_productName:identifier___ModelProtocol? {
+        willSet {
+            model?.delegate = nil
+        }
+        didSet {
+            model?.delegate = self
+        }
     }
     
     
-    /*
-     ****************
-     MARK: GET OTHER VIEWMODELS
-     ****************
-     */
+    /*****************************
+     MARK: CUSTOM INIT
+     ****************************/
+    required init(model: ___VARIABLE_productName:identifier___ModelProtocol, coordinator:___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate) {
+        self.model = model
+        self.coordinatorDelegate = coordinator
+    }
+
+    
+    /*****************************
+     MARK: PRIVATE METHODS
+     ******************************/
     
     
+    /*****************************
+     MARK: PUBLIC METHODS
+     ****************************/
     
-    /*
-     ****************
-     MARK: LOCAL METHODS
-     ****************
-     */
     
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_productName:identifier___ModelDelegate {
     
 }
