@@ -60,7 +60,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView
     {
         
         // we're going to do stuff here
-        Bundle.main.loadNibNamed("\(___FILEBASENAMEASIDENTIFIER___)", owner: self, options: nil)
+        Bundle.main.loadNibNamed("\(___FILEBASENAMEASIDENTIFIER___.self)", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
