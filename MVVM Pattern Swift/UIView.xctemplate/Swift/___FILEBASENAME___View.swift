@@ -44,7 +44,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView
     
     override init(frame: CGRect) { // for using custom view in code
         super.init(frame: frame)
-        // commonInit()
+        commonInit()
     }
     
     required init?(coder aDecoder: NSCoder) { // for using custom view in IB
@@ -58,18 +58,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView
      MARK: LOCAL METHODS
      ****************
      */
-    private func commonInit()
-    {
-        
+    private func commonInit() {
         // we're going to do stuff here
         Bundle.main.loadNibNamed("\(___FILEBASENAMEASIDENTIFIER___.self)", owner: self, options: nil)
-        addSubview(contentView)
-        contentView.frame = self.bounds
-        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-
-//        self.layer.borderColor = UIColor.red.cgColor
-//        self.layer.borderWidth = 1
-        
     }
     
     
