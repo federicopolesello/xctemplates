@@ -9,43 +9,66 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___
+// To talk with the view
+protocol ___FILEBASENAMEASIDENTIFIER___ViewDelegate: class {
+    
+}
+
+// ViewModel protocol
+protocol ___FILEBASENAMEASIDENTIFIER___Protocol
+{
+    
+    /*****************************
+     MARK: CONST & VARIABLES
+     ****************************/
+    var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate? { get set }
+    var model: ___VARIABLE_productName:identifier___ModelProtocol? { get set }
+    
+    /*****************************
+     MARK: PUBLIC METHODS
+     ****************************/
+    init(model: ___VARIABLE_productName:identifier___ModelProtocol)
+    
+}
+
+class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol
 {
 
-    /*
-     ****************
-     MARK: VARIABLES
-     ****************
-     */
+    /*****************************
+     MARK: CONST & VARIABLES
+     ****************************/
     
-    var model = ___VARIABLE_productName:identifier___Model()
-    
-    
-    /*
-     ****************
-     MARK: CUSTOM INIT
-     ****************
-     */
-    /*
-    convenience init(obj:Any)
-    {
-        self.init()
+    var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate?
+    var model: ___VARIABLE_productName:identifier___ModelProtocol? {
+        willSet {
+            model?.delegate = nil
+        }
+        didSet {
+            model?.delegate = self
+        }
     }
-     */
     
     
-    /*
-     ****************
-     MARK: GET OTHER VIEWMODELS
-     ****************
-     */
+    /*****************************
+     MARK: CUSTOM INIT
+     ****************************/
+    required init(model: ___VARIABLE_productName:identifier___ModelProtocol) {
+        self.model = model
+    }
     
     
-    /*
-     ****************
-     MARK: LOCAL METHODS
-     ****************
-     */
+    /*****************************
+     MARK: PRIVATE METHODS
+     ******************************/
     
+    
+    /*****************************
+     MARK: PUBLIC METHODS
+     ****************************/
+    
+    
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_productName:identifier___ModelDelegate {
     
 }
