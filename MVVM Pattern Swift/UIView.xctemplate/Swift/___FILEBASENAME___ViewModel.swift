@@ -15,8 +15,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewDelegate: class {
 }
 
 // ViewModel protocol
-protocol ___FILEBASENAMEASIDENTIFIER___Protocol
-{
+protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
     
     /*****************************
      MARK: CONST & VARIABLES
@@ -31,8 +30,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___Protocol
     
 }
 
-class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol
-{
+class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
 
     /*****************************
      MARK: CONST & VARIABLES

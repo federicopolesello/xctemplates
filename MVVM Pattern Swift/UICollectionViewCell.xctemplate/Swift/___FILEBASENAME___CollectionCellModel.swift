@@ -9,8 +9,7 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___
-{
+class ___FILEBASENAMEASIDENTIFIER___ {
     
     //MARK: LOCAL METHODS
     

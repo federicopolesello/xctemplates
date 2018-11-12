@@ -14,8 +14,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___Delegate {
     
 }
 
-class ___FILEBASENAMEASIDENTIFIER___ : Coordinator
-{
+class ___FILEBASENAMEASIDENTIFIER___ : Coordinator {
     
     /*****************************
      MARK: UI COMPONENTS

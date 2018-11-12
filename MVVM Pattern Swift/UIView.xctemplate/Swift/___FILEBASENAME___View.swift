@@ -14,8 +14,7 @@ import UIKit
     // @objc optional func didSelectElement
 }
 
-class ___FILEBASENAMEASIDENTIFIER___: UIView
-{
+class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
     /*****************************
      MARK: UI COMPONENTS

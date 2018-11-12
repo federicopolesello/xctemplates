@@ -9,13 +9,11 @@
 
 import UIKit
 
-@objc protocol ___FILEBASENAMEASIDENTIFIER___Delegate
-{
+@objc protocol ___FILEBASENAMEASIDENTIFIER___Delegate {
     // @objc optional func didSelectElement
 }
 
-class ___FILEBASENAMEASIDENTIFIER___: UICollectionViewCell
-{
+class ___FILEBASENAMEASIDENTIFIER___: UICollectionViewCell {
     
     /*
      ****************

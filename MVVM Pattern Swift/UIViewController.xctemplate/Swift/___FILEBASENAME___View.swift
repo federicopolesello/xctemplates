@@ -9,8 +9,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UIViewController
-{
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
     /*****************************
      MARK: UI COMPONENTS
