@@ -129,9 +129,8 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___ViewModelViewDelegate
-{
-    
-    // MARK: ___VARIABLE_productName:identifier___ViewModelViewDelegate
+// MARK: ___VARIABLE_productName:identifier___ViewModelViewDelegate
+// - To handle messages that arriving from View Model
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___ViewModelViewDelegate {
     
 }

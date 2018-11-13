@@ -84,12 +84,12 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        if let cell = tableView.dequeueReusableCell(withIdentifier: ProvaCellView.reuseIdentifier, for: indexPath) as? ProvaCellView {
-            cell.viewModel = viewModel?.provaCellViewModel(for: indexPath.row)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: TestTableCellView.reuseIdentifier, for: indexPath) as? TestTableCellView {
+            cell.viewModel = viewModel?.testCellViewModel(for: indexPath.row)
             cell.updateUI()
             return cell
         }
-        return ProvaCellView()
+        return TestTableCellView()
         
     }
     
@@ -109,7 +109,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewController {
      ****************************/
     
     private func setUIOnDidLoad() {
-        tableView.register(ProvaCellView.nib, forCellReuseIdentifier: ProvaCellView.reuseIdentifier)
+        tableView.register(TestTableCellView.nib, forCellReuseIdentifier: TestTableCellView.reuseIdentifier)
     }
     
     private func setUIOnWillAppear() {
@@ -160,9 +160,8 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewController {
     
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___ViewModelViewDelegate
-{
-    
-    // MARK: ___VARIABLE_productName:identifier___ViewModelViewDelegate
+// MARK: ___VARIABLE_productName:identifier___ViewModelViewDelegate
+// - To handle messages that arriving from View Model
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___ViewModelViewDelegate {
     
 }

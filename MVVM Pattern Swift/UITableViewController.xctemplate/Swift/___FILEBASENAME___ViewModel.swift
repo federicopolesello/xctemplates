@@ -35,7 +35,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
     init(model:___VARIABLE_productName:identifier___ModelProtocol, coordinator:___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?)
     func numberOfSections() -> Int
     func numberOfRowsInSection(section:Int) -> Int
-    func provaCellViewModel(for index: Int) -> ProvaCellViewModelProtocol
+    func testTableCellViewModel(for index: Int) -> TestTableCellViewModelProtocol
     
 }
 
@@ -81,8 +81,8 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
         return self.model?.items.count ?? 0
     }
     
-    func provaCellViewModel(for index: Int) -> ProvaCellViewModelProtocol {
-        let cellViewModel = ProvaCellViewModel()
+    func testTableCellViewModel(for index: Int) -> TestTableCellViewModelProtocol {
+        let cellViewModel = TestTableCellViewModel()
         if let model = model, model.items.indices.contains(index) {
             cellViewModel.model = model.items[index]
         }
@@ -91,6 +91,8 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
     
 }
 
+// MARK: ___VARIABLE_productName:identifier___ModelDelegate
+// - To handle messages that arriving from Model
 extension ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_productName:identifier___ModelDelegate {
     
 }

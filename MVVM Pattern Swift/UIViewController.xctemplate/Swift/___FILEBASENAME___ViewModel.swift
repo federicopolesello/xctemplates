@@ -74,6 +74,8 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
     
 }
 
+// MARK: ___VARIABLE_productName:identifier___ModelDelegate
+// - To handle messages that arriving from Model
 extension ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_productName:identifier___ModelDelegate {
     
 }
