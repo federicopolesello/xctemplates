@@ -83,8 +83,8 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
     
     func <#cellName#>TableCellViewModel(for index: Int) -> <#CellName#>TableCellViewModelProtocol {
         let cellViewModel = <#CellName#>TableCellViewModel()
-        if let model = model, model.dataSource.indices.contains(index) {
-            cellViewModel.model = model.dataSource[index]
+        if let model = model, model.items.indices.contains(index) {
+            cellViewModel.model = model.items[index]
         }
         return cellViewModel
     }
