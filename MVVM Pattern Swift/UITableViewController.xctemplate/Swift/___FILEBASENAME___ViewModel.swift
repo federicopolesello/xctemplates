@@ -35,7 +35,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
     init(model:___VARIABLE_productName:identifier___ModelProtocol, coordinator:___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?)
     func numberOfSections() -> Int
     func numberOfRowsInSection(section:Int) -> Int
-    func testTableCellViewModel(for index: Int) -> TestTableCellViewModelProtocol
+    func <#cellName#>TableCellViewModel(for index: Int) -> <#CellName#>TableCellViewModelProtocol
     
 }
 
@@ -74,17 +74,17 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
      MARK: PUBLIC METHODS
      ****************************/
     func numberOfSections() -> Int {
-        return self.model?.items.count ?? 0
+        return 1
     }
     
     func numberOfRowsInSection(section:Int) -> Int {
         return self.model?.items.count ?? 0
     }
     
-    func testTableCellViewModel(for index: Int) -> TestTableCellViewModelProtocol {
-        let cellViewModel = TestTableCellViewModel()
-        if let model = model, model.items.indices.contains(index) {
-            cellViewModel.model = model.items[index]
+    func <#cellName#>TableCellViewModel(for index: Int) -> <#CellName#>TableCellViewModelProtocol {
+        let cellViewModel = <#CellName#>TableCellViewModel()
+        if let model = model, model.dataSource.indices.contains(index) {
+            cellViewModel.model = model.dataSource[index]
         }
         return cellViewModel
     }

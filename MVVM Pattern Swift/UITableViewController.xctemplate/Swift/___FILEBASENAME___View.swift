@@ -84,12 +84,12 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        if let cell = tableView.dequeueReusableCell(withIdentifier: TestTableCellView.reuseIdentifier, for: indexPath) as? TestTableCellView {
-            cell.viewModel = viewModel?.testCellViewModel(for: indexPath.row)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: <#CellName#>TableCellView.reuseIdentifier, for: indexPath) as? <#CellName#>TableCellView {
+            cell.viewModel = viewModel?.<#cellName#>TableCellViewModel(for: indexPath.row)
             cell.updateUI()
             return cell
         }
-        return TestTableCellView()
+        return <#CellName#>TableCellView()
         
     }
     
@@ -109,7 +109,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewController {
      ****************************/
     
     private func setUIOnDidLoad() {
-        tableView.register(TestTableCellView.nib, forCellReuseIdentifier: TestTableCellView.reuseIdentifier)
+        tableView.register(<#CellName#>TableCellView.nib, forCellReuseIdentifier: <#CellName#>TableCellView.reuseIdentifier)
     }
     
     private func setUIOnWillAppear() {

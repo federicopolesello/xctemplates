@@ -21,7 +21,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
      MARK: CONST & VARIABLES
      ****************************/
     var delegate : ___FILEBASENAMEASIDENTIFIER___Delegate? { get set }
-    var items:[ProvaCellModelProtocol] { get set }
+    var items:[<#CellName#>TableCellModelProtocol] { get set }
     
     /*****************************
      MARK: PUBLIC METHODS
@@ -35,7 +35,7 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
      MARK: CONST & VARIABLES
      ****************************/
     var delegate : ___FILEBASENAMEASIDENTIFIER___Delegate?
-    var items:[ProvaCellModelProtocol] = [ProvaCellModelProtocol]()
+    var items:[<#CellName#>TableCellModelProtocol] = [<#CellName#>TableCellModelProtocol]()
     
     
     /*****************************
