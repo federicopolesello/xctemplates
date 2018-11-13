@@ -86,7 +86,6 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
         if let model = model, model.items.indices.contains(index) {
             cellViewModel.model = model.items[index]
         }
-        cellViewModel.model = ProvaCellModel("ciaooooo")
         return cellViewModel
     }
     
