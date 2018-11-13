@@ -160,9 +160,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewController {
     
 }
 
-extension ViewContrView: ViewContrViewModelViewDelegate
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___ViewModelViewDelegate
 {
     
-    // MARK: ViewContrViewModelViewDelegate
+    // MARK: ___VARIABLE_productName:identifier___ViewModelViewDelegate
     
 }
