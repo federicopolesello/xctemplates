@@ -98,12 +98,6 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
      MARK: PRIVATE METHODS
      ****************************/
     
-    
-    
-    /*****************************
-     MARK: PUBLIC METHODS
-     ****************************/
-    
     private func setBusinessLogicOnDidLoad() {
         
     }
@@ -119,6 +113,13 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     private func setBusinessLogicOnWillDisappear() {
         
     }
+    
+    
+    /*****************************
+     MARK: PUBLIC METHODS
+     ****************************/
+    
+    
     
     
     /*****************************

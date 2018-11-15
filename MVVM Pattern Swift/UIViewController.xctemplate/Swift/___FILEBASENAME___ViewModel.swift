@@ -32,7 +32,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
     /*****************************
      MARK: PUBLIC METHODS
      ****************************/
-    init(model: ___VARIABLE_productName:identifier___ModelProtocol, coordinator:___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate)
+    init(model: ___VARIABLE_productName:identifier___ModelProtocol?, coordinator:___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?)
     
 }
 
@@ -56,7 +56,7 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
     /*****************************
      MARK: CUSTOM INIT
      ****************************/
-    required init(model: ___VARIABLE_productName:identifier___ModelProtocol, coordinator:___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate) {
+    required init(model: ___VARIABLE_productName:identifier___ModelProtocol?, coordinator:___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?) {
         self.model = model
         self.coordinatorDelegate = coordinator
     }
