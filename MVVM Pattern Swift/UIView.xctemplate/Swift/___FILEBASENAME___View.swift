@@ -60,6 +60,8 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     private func commonInit() {
         // we're going to do stuff here
         Bundle.main.loadNibNamed("\(___FILEBASENAMEASIDENTIFIER___.self)", owner: self, options: nil)
+        self.contentView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        addSubview(self.contentView)
     }
     
     
