@@ -30,6 +30,7 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Nib {
         }
         didSet {
             viewModel?.viewDelegate = self
+            updateUI()
         }
     }
     var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
