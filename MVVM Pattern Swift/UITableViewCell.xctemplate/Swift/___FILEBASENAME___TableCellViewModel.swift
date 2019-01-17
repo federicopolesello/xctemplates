@@ -36,23 +36,9 @@ class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
      MARK: CONST & VARIABLES
      ****************************/
     var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate?
-    var model: ___VARIABLE_productName:identifier___TableCellModelProtocol? {
-        willSet {
-            model?.delegate = nil
-        }
-        didSet {
-            model?.delegate = self
-        }
-    }
 
     var title: String? {
-        return model?.title
+        return ""
     }
-    
-}
-
-// MARK: ___VARIABLE_productName:identifier___ModelDelegate
-// - To handle messages that arriving from Model
-extension ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_productName:identifier___TableCellModelDelegate {
     
 }
