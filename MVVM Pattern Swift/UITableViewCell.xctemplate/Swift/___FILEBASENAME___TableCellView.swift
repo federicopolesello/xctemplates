@@ -13,7 +13,7 @@ import UIKit
     // @objc optional func didSelectButton
 }
 
-class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, UIViewProtocol {
+final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Nib {
 
     /*****************************
      MARK: UI COMPONENTS
