@@ -15,15 +15,15 @@ import UIKit
 
 final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Nib {
 
-    /*****************************
-     MARK: UI COMPONENTS
-     ****************************/
+    /*****************************/
+    // MARK: UI COMPONENTS
+    /******************************/
     @IBOutlet weak var label: UILabel!
     
     
-    /*****************************
-     CONST & VARIABLES
-     ****************************/
+    /*****************************/
+    // MARK: CONST & VARIABLES
+    /******************************/
     var viewModel: ___VARIABLE_productName:identifier___TableCellViewModelProtocol? {
         willSet {
             viewModel?.viewDelegate = nil
@@ -36,9 +36,9 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Nib {
     var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
     
     
-    /*****************************
-     MARK: LIFE CYCLE
-     ****************************/
+    /*****************************/
+    // MARK: LIFE CYCLE
+    /******************************/
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -47,7 +47,6 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Nib {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     
@@ -55,14 +54,28 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Nib {
         super.prepareForReuse()
     }
     
+    
+    /*****************************/
+    // MARK: PRIVATE METHODS
+    /******************************/
+    
+    
+    /*****************************/
+    // MARK: PUBLIC METHODS
+    /******************************/
     func updateUI() {
         
     }
     
+    
+    /*****************************/
+    // MARK: ACTIONS
+    /******************************/
+    
+    
 }
 
-// MARK: ___VARIABLE_productName:identifier___ViewModelViewDelegate
-// - To handle messages that arriving from View Model
-extension ___FILEBASENAMEASIDENTIFIER___ : ___VARIABLE_productName:identifier___TableCellViewModelViewDelegate {
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate {
+    // MARK: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate - To handle messages that arriving from ViewModel
     
 }

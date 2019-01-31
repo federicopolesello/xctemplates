@@ -11,6 +11,7 @@ import Foundation
 
 protocol ___FILEBASENAMEASIDENTIFIER___ViewDelegate: class {
     // MARK: To talk with the view
+    
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
@@ -25,7 +26,6 @@ protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
     /*****************************/
     // MARK: PUBLIC METHODS
     /******************************/
-
     
 }
 
@@ -34,6 +34,7 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
     /*****************************/
     // MARK: CONST & VARIABLES
     /******************************/
+    
     var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate?
     
     
@@ -43,15 +44,14 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
     
     
     
-    /*****************************
-     MARK: PRIVATE METHODS
-     ******************************/
+    /*****************************/
+    // MARK: PRIVATE METHODS
+    /******************************/
     
     
-    
-    /*****************************
-     MARK: PUBLIC METHODS
-     ****************************/
+    /*****************************/
+    // MARK: PUBLIC METHODS
+    /******************************/
     
     
 }

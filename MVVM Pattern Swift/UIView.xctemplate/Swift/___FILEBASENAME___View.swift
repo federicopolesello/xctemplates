@@ -9,37 +9,37 @@
 
 import UIKit
 
-@objc protocol ___FILEBASENAMEASIDENTIFIER___Delegate
-{
+@objc protocol ___FILEBASENAMEASIDENTIFIER___Delegate {
     // @objc optional func didSelectElement
 }
 
 class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
-    /*****************************
-     MARK: UI COMPONENTS
-     ****************************/
+    /*****************************/
+    // MARK: UI COMPONENTS
+    /******************************/
     @IBOutlet weak var contentView: UIView!
     
     
-    /*****************************
-     CONST & VARIABLES
-     ****************************/
+    /*****************************/
+    // MARK: CONST & VARIABLES
+    /******************************/
     var viewModel: ___VARIABLE_productName:identifier___ViewModelProtocol? {
         willSet {
             viewModel?.viewDelegate = nil
         }
         didSet {
             viewModel?.viewDelegate = self
+            updateUI()
         }
     }
     var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
     
     
     
-    /*****************************
-     MARK: LIFE CYCLE
-     ****************************/
+    /*****************************/
+    // MARK: LIFE CYCLE
+    /******************************/
     
     override init(frame: CGRect) { // for using custom view in code
         super.init(frame: frame)
@@ -52,11 +52,18 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     }
     
     
-    /*
-     ****************
-     MARK: LOCAL METHODS
-     ****************
-     */
+    /*****************************/
+    // MARK: USER INTERFACE METHODS
+    /******************************/
+    func updateUI() {
+        
+    }
+    
+    
+    
+    /*****************************/
+    // MARK: PRIVATE METHODS
+    /******************************/
     private func commonInit() {
         // we're going to do stuff here
         Bundle.main.loadNibNamed("\(___FILEBASENAMEASIDENTIFIER___.self)", owner: self, options: nil)
@@ -65,36 +72,21 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     }
     
     
-    /*****************************
-     MARK: USER INTERFACE METHODS
-     ****************************/
-    func updateUI() {
-        
-    }
+    
+    /*****************************/
+    // MARK: PUBLIC METHODS
+    /******************************/
     
     
     
-    /*****************************
-     MARK: PRIVATE METHODS
-     ****************************/
-    
-    
-    
-    /*****************************
-     MARK: PUBLIC METHODS
-     ****************************/
-    
-    
-    
-    /*****************************
-     MARK: ACTIONS
-     ****************************/
+    /*****************************/
+    // MARK: ACTIONS
+    /******************************/
     
     
 }
 
-// MARK: ___VARIABLE_productName:identifier___ViewModelViewDelegate
-// - To handle messages that arriving from View Model
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___ViewModelViewDelegate {
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate {
+    // MARK: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate - To handle messages that arriving from ViewModel
     
 }

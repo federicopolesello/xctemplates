@@ -11,16 +11,16 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     
-    /*****************************
-     MARK: UI COMPONENTS
-     ****************************/
+    /*****************************/
+    // MARK: UI COMPONENTS
+    /******************************/
     
     
     
-    /*****************************
-     CONST & VARIABLES
-     ****************************/
-    var viewModel: ___VARIABLE_productName:identifier___ViewModelProtocol? {
+    /*****************************/
+    // MARK: CONST & VARIABLES
+    /******************************/
+    var viewModel: ___VARIABLE_productName:identifier___ControllerViewModelProtocol? {
         willSet {
             viewModel?.viewDelegate = nil
         }
@@ -30,9 +30,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
     
     
-    /*****************************
-     MARK: LIFE CYCLE
-     ****************************/
+    /*****************************/
+    // MARK: LIFE CYCLE
+    /******************************/
     
     override func viewDidLoad() {
         
@@ -73,9 +73,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
     
     
-    /*****************************
-     MARK: USER INTERFACE METHODS
-     ****************************/
+    /*****************************/
+    // MARK: USER INTERFACE METHODS
+    /******************************/
     
     private func setUIOnDidLoad() {
         
@@ -94,9 +94,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
     
     
-    /*****************************
-     MARK: PRIVATE METHODS
-     ****************************/
+    /*****************************/
+    // MARK: PRIVATE METHODS
+    /******************************/
     
     private func setBusinessLogicOnDidLoad() {
         
@@ -115,23 +115,22 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
     
     
-    /*****************************
-     MARK: PUBLIC METHODS
-     ****************************/
+    /*****************************/
+    // MARK: PUBLIC METHODS
+    /******************************/
     
     
     
     
-    /*****************************
-     MARK: ACTIONS
-     ****************************/
+    /*****************************/
+    // MARK: ACTIONS
+    /******************************/
     
     
     
 }
 
-// MARK: ___VARIABLE_productName:identifier___ViewModelViewDelegate
-// - To handle messages that arriving from View Model
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___ViewModelViewDelegate {
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate {
+    // MARK: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate - To handle messages that arriving from ViewModel
     
 }

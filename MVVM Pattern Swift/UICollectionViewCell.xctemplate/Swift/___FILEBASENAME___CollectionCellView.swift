@@ -15,29 +15,30 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___: UICollectionViewCell {
     
-    /*
-     ****************
-     MARK: UI COMPONENTS
-     ****************
-     */
+    /*****************************/
+    // MARK: UI COMPONENTS
+    /******************************/
     
     
-    /*
-     *********
-     CONST & VARIABLES
-     *********
-     */
-    var viewModel: ___VARIABLE_productName:identifier___CollectionCellViewModel? = nil
+    /*****************************/
+    // MARK: CONST & VARIABLES
+    /******************************/
+    var viewModel: ___VARIABLE_productName:identifier___CollectionCellViewModelProtocol? {
+        willSet {
+            viewModel?.viewDelegate = nil
+        }
+        didSet {
+            viewModel?.viewDelegate = self
+            updateUI()
+        }
+    }
     var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
     
     
-    /*
-     ****************
-     MARK: LIFE CYCLE
-     ****************
-     */
-    override func awakeFromNib()
-    {
+    /*****************************/
+    // MARK: LIFE CYCLE
+    /******************************/
+    override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
@@ -47,29 +48,26 @@ class ___FILEBASENAMEASIDENTIFIER___: UICollectionViewCell {
     }
     
     
-    /*
-     ****************
-     MARK: LOCAL METHODS
-     ****************
-     */
+    /*****************************/
+    // MARK: PRIVATE METHODS
+    /******************************/
     
     
-    /*
-     ****************
-     MARK: SETTING UI
-     ****************
-     */
-    func updateUI()
-    {
+    /*****************************/
+    // MARK: PUBLIC METHODS
+    /******************************/
+    func updateUI() {
         
     }
     
     
-    /*
-     ****************
-     MARK: ACTIONS
-     ****************
-     */
+    /*****************************/
+    // MARK: ACTIONS
+    /******************************/
     
 }
 
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate {
+    // MARK: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate - To handle messages that arriving from ViewModel
+    
+}

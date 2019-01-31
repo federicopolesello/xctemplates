@@ -9,42 +9,41 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___ {
+protocol ___FILEBASENAMEASIDENTIFIER___ViewDelegate: class {
+    // MARK: ___FILEBASENAMEASIDENTIFIER___ViewDelegate - To talk with the view
+    
+}
 
-    /*
-     ****************
-     MARK: VARIABLES
-     ****************
-     */
+protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
     
-    var model = ___VARIABLE_productName:identifier___CollectionCellModel()
+    // MARK: ViewModel protocol
+    
+    /*****************************/
+    // MARK: CONST & VARIABLES
+    /******************************/
+    var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate? { get set }
+    var title: String? { get }
     
     
-    /*
-     ****************
-     MARK: CUSTOM INIT
-     ****************
-     */
-    /*
-    convenience init(obj:Any)
-    {
-        self.init()
+    /*****************************/
+    // MARK: PUBLIC METHODS
+    /******************************/
+    
+}
+
+class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
+    
+    /*****************************/
+    // MARK: CONST & VARIABLES
+    /******************************/
+    var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate?
+    
+    var title: String? {
+        return ""
     }
-     */
     
-    
-    /*
-     ****************
-     MARK: GET OTHER VIEWMODELS
-     ****************
-     */
-    
-    
-    /*
-     ****************
-     MARK: LOCAL METHODS
-     ****************
-     */
-    
+    /*****************************/
+    // MARK: PUBLIC METHODS
+    /******************************/
     
 }
