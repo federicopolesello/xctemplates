@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController, Storyboarded {
     
     /*****************************/
     // MARK: UI COMPONENTS

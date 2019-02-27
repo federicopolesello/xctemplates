@@ -22,6 +22,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
     // MARK: CONST & VARIABLES
     /******************************/
     var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate? { get set }
+    var indexPath: IndexPath { get }
     var title: String? { get }
     
     
@@ -37,7 +38,12 @@ class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
     // MARK: CONST & VARIABLES
     /******************************/
     var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate?
-
+    var indexPath: IndexPath
+    
+    required init(indexPath: IndexPath) {
+        self.indexPath = indexPath
+    }
+    
     var title: String? {
         return ""
     }

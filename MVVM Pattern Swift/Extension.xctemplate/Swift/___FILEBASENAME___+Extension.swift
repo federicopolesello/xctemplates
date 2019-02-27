@@ -9,8 +9,7 @@
 
 import Foundation
 
-extension ___FILEBASENAMEASIDENTIFIER___
-{
+extension ___VARIABLE_productName:identifier___ {
  
     
     
