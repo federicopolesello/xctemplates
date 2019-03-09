@@ -27,7 +27,7 @@ class ___FILEBASENAMEASIDENTIFIER___ : Coordinator {
     // MARK: CONST & VARIABLES
     /******************************/
     var coordinatorDelegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
-    var viewModelDelegate: ___VARIABLE_productName:identifier___TableControllerViewModelViewDelegate?
+    // var viewModelDelegate: ___VARIABLE_productName:identifier___TableControllerViewModelViewDelegate?
     
     
     /*****************************

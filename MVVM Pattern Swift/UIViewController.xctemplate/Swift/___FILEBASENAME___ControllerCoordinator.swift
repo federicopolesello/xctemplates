@@ -27,7 +27,7 @@ class ___FILEBASENAMEASIDENTIFIER___ : Coordinator {
     // MARK: CONST & VARIABLES
     /******************************/
     var coordinatorDelegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
-    var viewModelDelegate: ___VARIABLE_productName:identifier___ControllerViewModelViewDelegate?
+    // var viewModelDelegate: ___VARIABLE_productName:identifier___ControllerViewModelViewDelegate?
     
     
     /*****************************
@@ -47,6 +47,7 @@ class ___FILEBASENAMEASIDENTIFIER___ : Coordinator {
     /*****************************/
     // MARK: PUBLIC METHODS
     /******************************/
+    
     func start(fromController controller: UIViewController?, withPresentationMode presentationMode: EnumControllerPresentationMode) {
         
     }
@@ -58,5 +59,8 @@ class ___FILEBASENAMEASIDENTIFIER___ : Coordinator {
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___ControllerViewModelCoordinatorDelegate {
+    
     // MARK: ___VARIABLE_productName:identifier___ControllerViewModelCoordinatorDelegate - To handle messages that arriving from ViewModel
+    
+    
 }
