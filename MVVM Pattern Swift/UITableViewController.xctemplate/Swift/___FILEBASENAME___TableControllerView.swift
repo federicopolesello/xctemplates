@@ -139,7 +139,6 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
         }
         if let cellExtract = tableView.dequeueReusableCell(withIdentifier: <#CellName#>TableCellView.reuseIdentifier, for: indexPath) as? <#CellName#>TableCellView {
             cellExtract.viewModel = viewModel.<#cellName#>TableCellViewModel(for: indexPath.row)
-            cellExtract.updateUI()
             cell = cellExtract
         }
         return cell
