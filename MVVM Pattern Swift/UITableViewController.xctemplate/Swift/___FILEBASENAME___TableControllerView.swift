@@ -133,14 +133,16 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        if let cell = tableView.dequeueReusableCell(withIdentifier: <#CellName#>TableCellView.reuseIdentifier, for: indexPath) as? <#CellName#>TableCellView {
-            cell.viewModel = viewModel?.<#cellName#>TableCellViewModel(for: indexPath.row)
-            cell.updateUI()
+        var cell = UITableViewCell()
+        guard let viewModel = viewModel else {
             return cell
         }
-        return <#CellName#>TableCellView()
-        
+        if let cellExtract = tableView.dequeueReusableCell(withIdentifier: <#CellName#>TableCellView.reuseIdentifier, for: indexPath) as? <#CellName#>TableCellView {
+            cellExtract.viewModel = viewModel.<#cellName#>TableCellViewModel(for: indexPath.row)
+            cellExtract.updateUI()
+            cell = cellExtract
+        }
+        return cell
     }
     
 }
