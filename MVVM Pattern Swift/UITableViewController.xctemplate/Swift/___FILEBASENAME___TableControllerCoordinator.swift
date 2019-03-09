@@ -47,6 +47,7 @@ class ___FILEBASENAMEASIDENTIFIER___ : Coordinator {
     /*****************************/
     // MARK: PUBLIC METHODS
     /******************************/
+    
     func start(fromController controller: UIViewController?, withPresentationMode presentationMode: EnumControllerPresentationMode) {
         
     }
@@ -58,5 +59,9 @@ class ___FILEBASENAMEASIDENTIFIER___ : Coordinator {
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___TableControllerViewModelCoordinatorDelegate {
+    
     // MARK: ___VARIABLE_productName:identifier___TableControllerViewModelCoordinatorDelegate - To handle messages that arriving from ViewModel
+    
+    
+    
 }
