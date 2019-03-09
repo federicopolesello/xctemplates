@@ -36,6 +36,8 @@ protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
     init(coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?)
     func numberOfSections() -> Int
     func numberOfRowsInSection(section: Int) -> Int
+    func heightForRowAt(indexPath: IndexPath) -> Float
+    func didSelectRowAt(indexPath: IndexPath)
     func <#cellName#>TableCellViewModel(for index: Int) -> <#CellName#>TableCellViewModelProtocol
     
 }
@@ -71,6 +73,14 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
     
     func numberOfRowsInSection(section: Int) -> Int {
         return 10
+    }
+    
+    func heightForRowAt(indexPath: IndexPath) -> Float {
+        return 44
+    }
+    
+    func didSelectRowAt(indexPath: IndexPath) {
+        
     }
     
     func <#cellName#>TableCellViewModel(for index: Int) -> <#CellName#>TableCellViewModelProtocol {
