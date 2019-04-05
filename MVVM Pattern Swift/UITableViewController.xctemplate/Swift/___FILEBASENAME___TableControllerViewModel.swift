@@ -84,7 +84,7 @@ class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
     }
     
     func <#cellName#>TableCellViewModel(for indexPath: IndexPath) -> <#CellName#>TableCellViewModelProtocol {
-        let cellViewModel = <#CellName#>TableCellViewModel()
+        let cellViewModel = <#CellName#>TableCellViewModel(indexPath: indexPath)
         return cellViewModel
     }
     
