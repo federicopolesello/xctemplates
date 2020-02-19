@@ -8,55 +8,44 @@
 //
 
 import UIKit
+import SPFoundation
+import SPUIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UITableViewController, Storyboarded {
+class ___FILEBASENAMEASIDENTIFIER___: UITableViewController, SPUIStoryboarded {
     
-    /*****************************/
     // MARK: UI COMPONENTS
-    /******************************/
     
     
-    
-    /*****************************/
     // MARK: CONST & VARIABLES
-    /******************************/
     var viewModel: ___VARIABLE_productName:identifier___TableControllerViewModelProtocol? {
-        willSet {
-            viewModel?.viewDelegate = nil
-        }
-        didSet {
-            viewModel?.viewDelegate = self
-        }
+        didSet {}
     }
     
+    // MARK: CLOSURES
     
-    /*****************************/
+    
     // MARK: LIFE CYCLE
-    /******************************/
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.setUIOnDidLoad()
-        self.setBusinessLogicOnDidLoad()
+        viewModel?.onDidLoad()
+        setupTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.setUIOnWillAppear()
-        self.setBusinessLogicOnWillAppear()
+        viewModel?.onWillAppear()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.setUIOnDidAppear()
-        self.setBusinessLogicOnDidAppear()
+        viewModel?.onDidAppear()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.setUIOnWillDisappear()
-        self.setBusinessLogicOnWillDisappear()
+        viewModel?.onWillDisappear()
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,63 +54,41 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewController, Storyboarded {
     }
     
     
-    /*****************************
-     MARK: USER INTERFACE METHODS
-     ****************************/
-    
-    private func setUIOnDidLoad() {
-        tableView.register(<#CellName#>TableCellView.nib, forCellReuseIdentifier: <#CellName#>TableCellView.reuseIdentifier)
-    }
-    
-    private func setUIOnWillAppear() {
-        
-    }
-    
-    private func setUIOnDidAppear() {
-        
-    }
-    
-    private func setUIOnWillDisappear() {
-        
-    }
-    
-    
-    /*****************************
-     MARK: PRIVATE METHODS
-     ****************************/
-    
-    private func setBusinessLogicOnDidLoad() {
-        
-    }
-    
-    private func setBusinessLogicOnWillAppear() {
-        
-    }
-    
-    private func setBusinessLogicOnDidAppear() {
-        
-    }
-    
-    private func setBusinessLogicOnWillDisappear() {
-        
-    }
-    
-    
-    /*****************************
-     MARK: PUBLIC METHODS
-     ****************************/
-    
-    
-    
-    /*****************************
-     MARK: ACTIONS
-     ****************************/
-    
+    // MARK: ACTIONS
     
     
 }
 
+private extension ___FILEBASENAMEASIDENTIFIER___ {
+    
+    // MARK: PRIVATE USER INTERFACE METHODS
+    
+    func setupTableView() {
+        tableView.register(<#CellName#>TableCellView.self)
+    }
+    
+}
+
+private extension ___FILEBASENAMEASIDENTIFIER___ {
+    
+    // MARK: PRIVATE METHODS
+    
+}
+
+private extension ___FILEBASENAMEASIDENTIFIER___ {
+    
+    // MARK: PRIVATE HANDLERS
+    
+}
+
+private extension ___FILEBASENAMEASIDENTIFIER___ {
+    
+    // MARK: PUBLIC METHODS
+    
+}
+
 extension ___FILEBASENAMEASIDENTIFIER___ {
+    
     // MARK: UITableViewDataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -147,6 +114,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___ {
+    
     // MARK: UITableViewDelegate
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -156,10 +124,5 @@ extension ___FILEBASENAMEASIDENTIFIER___ {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel?.didSelectRowAt(indexPath: indexPath)
     }
-    
-}
-
-extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___TableControllerViewModelViewDelegate {
-    // MARK: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate - To handle messages that arriving from ViewModel
     
 }

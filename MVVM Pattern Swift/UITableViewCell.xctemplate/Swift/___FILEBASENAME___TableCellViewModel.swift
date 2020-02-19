@@ -9,47 +9,41 @@
 
 import Foundation
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewDelegate: class {
-    // MARK: ___FILEBASENAMEASIDENTIFIER___ViewDelegate - To talk with the view
-    
-}
-
 protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
 
     // MARK: ViewModel protocol
     
-    /*****************************/
+    
     // MARK: CONST & VARIABLES
-    /******************************/
-    var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate? { get set }
     var indexPath: IndexPath { get }
     var title: String? { get }
     
+	
+	// MARK: CLOSURES
+
     
-    /*****************************/
     // MARK: PUBLIC METHODS
-    /******************************/
+    init(indexPath: IndexPath)
+
 
 }
 
 class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
 	
-    /*****************************/
     // MARK: CONST & VARIABLES
-    /******************************/
-    var viewDelegate: ___FILEBASENAMEASIDENTIFIER___ViewDelegate?
     var indexPath: IndexPath
+    var title: String? {
+        return "title"
+    }
+
+
+    // MARK: CLOSURES
+
     
+    // MARK: PUBLIC METHODS
+
     required init(indexPath: IndexPath) {
         self.indexPath = indexPath
     }
-    
-    var title: String? {
-        return ""
-    }
-    
-    /*****************************/
-    // MARK: PUBLIC METHODS
-    /******************************/
     
 }

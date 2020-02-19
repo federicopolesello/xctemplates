@@ -8,37 +8,26 @@
 //
 
 import UIKit
+import SPUIKit
 
-@objc protocol ___FILEBASENAMEASIDENTIFIER___Delegate {
-    // @objc optional func didSelectButton
-}
+final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, SPUIReusable, SPUINibLoadable {
 
-final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Nib {
-
-    /*****************************/
     // MARK: UI COMPONENTS
-    /******************************/
     @IBOutlet weak var label: UILabel!
     
-    
-    /*****************************/
+ 
     // MARK: CONST & VARIABLES
-    /******************************/
     var viewModel: ___VARIABLE_productName:identifier___TableCellViewModelProtocol? {
-        willSet {
-            viewModel?.viewDelegate = nil
-        }
         didSet {
-            viewModel?.viewDelegate = self
             updateUI()
         }
     }
-    var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
     
     
-    /*****************************/
+    // MARK: CLOSURES
+    
+    
     // MARK: LIFE CYCLE
-    /******************************/
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -56,27 +45,16 @@ final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Nib {
     }
     
     
-    /*****************************/
     // MARK: PRIVATE METHODS
-    /******************************/
     
     
-    /*****************************/
     // MARK: PUBLIC METHODS
-    /******************************/
     func updateUI() {
-        
+        label.text = viewModel?.title
     }
     
     
-    /*****************************/
     // MARK: ACTIONS
-    /******************************/
     
-    
-}
-
-extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate {
-    // MARK: ___FILEBASENAMEASIDENTIFIER___ModelViewDelegate - To handle messages that arriving from ViewModel
     
 }
