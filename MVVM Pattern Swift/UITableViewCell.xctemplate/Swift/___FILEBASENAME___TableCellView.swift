@@ -9,6 +9,7 @@
 
 import UIKit
 import SPUIKit
+import SPFoundation
 
 final class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, SPUIReusable, SPUINibLoadable {
 

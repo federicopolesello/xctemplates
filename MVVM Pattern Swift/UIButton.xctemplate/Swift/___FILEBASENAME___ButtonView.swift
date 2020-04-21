@@ -9,37 +9,20 @@
 
 import UIKit
 
-@objc protocol ___FILEBASENAMEASIDENTIFIER___Delegate {
-    // @objc optional func didSelectElement
-}
-
 class ___FILEBASENAMEASIDENTIFIER___: UIButton {
 
-    /*****************************/
     // MARK: UI COMPONENTS
-    /******************************/
-    @IBOutlet weak var button: UIButton!
     
     
-    /*****************************/
     // MARK: CONST & VARIABLES
-    /******************************/
     var viewModel: ___VARIABLE_productName:identifier___ButtonViewModelProtocol? {
-        willSet {
-            viewModel?.viewDelegate = nil
-        }
         didSet {
-            viewModel?.viewDelegate = self
             updateUI()
         }
     }
-    var delegate: ___FILEBASENAMEASIDENTIFIER___Delegate?
     
     
-    
-    /*****************************/
     // MARK: LIFE CYCLE
-    /******************************/
     
     override init(frame: CGRect) { // for using custom view in code
         super.init(frame: frame)

@@ -10,7 +10,7 @@
 import Foundation
 import SPFoundation
 
-protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
+protocol ___FILEBASENAMEASIDENTIFIER___ {
     
     // MARK: CONST & VARIABLES
     

@@ -22,6 +22,9 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController, SPUIStoryboarded {
     }
     
     
+    // MARK: CLOSURES
+    
+    
     // MARK: LIFE CYCLE
     
     override func viewDidLoad() {
@@ -73,7 +76,7 @@ private extension ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
-private extension ___FILEBASENAMEASIDENTIFIER___ {
+extension ___FILEBASENAMEASIDENTIFIER___ {
     
     // MARK: PUBLIC METHODS
     

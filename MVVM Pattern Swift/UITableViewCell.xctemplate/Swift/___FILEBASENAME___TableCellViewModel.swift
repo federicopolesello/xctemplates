@@ -8,30 +8,14 @@
 //
 
 import Foundation
+import SPFoundation
 
-protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
+typealias ___FILEBASENAMEASIDENTIFIER___Type = ___FILEBASENAMEASIDENTIFIER___Protocol & TableRowViewModelProtocol & CellHeightProviderViewModelProtocol
 
-    // MARK: ViewModel protocol
-    
-    
-    // MARK: CONST & VARIABLES
-    var indexPath: IndexPath { get }
-    var title: String? { get }
-    
-	
-	// MARK: CLOSURES
-
-    
-    // MARK: PUBLIC METHODS
-    init(indexPath: IndexPath)
-
-
-}
-
-class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
+class ___FILEBASENAMEASIDENTIFIER___ {
 	
     // MARK: CONST & VARIABLES
-    var indexPath: IndexPath
+    var data: Any
     var title: String? {
         return "title"
     }
@@ -42,8 +26,14 @@ class ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
     
     // MARK: PUBLIC METHODS
 
-    required init(indexPath: IndexPath) {
-        self.indexPath = indexPath
+    required init(data: Any) {
+        self.data = data
     }
+    
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Type {
+    
+    // MARK: ___FILEBASENAMEASIDENTIFIER___Type
     
 }

@@ -21,6 +21,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewController, SPUIStoryboarded {
         didSet {}
     }
     
+    
     // MARK: CLOSURES
     
     
@@ -81,7 +82,7 @@ private extension ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
-private extension ___FILEBASENAMEASIDENTIFIER___ {
+extension ___FILEBASENAMEASIDENTIFIER___ {
     
     // MARK: PUBLIC METHODS
     

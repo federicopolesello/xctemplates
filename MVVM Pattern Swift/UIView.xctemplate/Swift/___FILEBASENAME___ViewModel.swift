@@ -8,46 +8,35 @@
 //
 
 import Foundation
+import SPFoundation
 
-protocol ___FILEBASENAMEASIDENTIFIER___Protocol {
-    
-    // MARK: ViewModel protocol
-    
-    /*****************************/
+class ___FILEBASENAMEASIDENTIFIER___ {
+
     // MARK: CONST & VARIABLES
-    /******************************/
-
     
-    /*****************************/
-    // MARK: PUBLIC METHODS
-    /******************************/
-
+    
+    // MARK: CUSTOM INIT
+    
+    
+    // MARK: CLOSURES
+    
     
 }
 
-class ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
+extension ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
+    
+    // MARK: ___FILEBASENAMEASIDENTIFIER___Protocol
+    
+}
 
-    /*****************************/
-    // MARK: CONST & VARIABLES
-    /******************************/
+private extension ___FILEBASENAMEASIDENTIFIER___ {
     
+    // MARK: PRIVATE METHODS
     
+}
+
+private extension ___FILEBASENAMEASIDENTIFIER___ {
     
-    /*****************************/
-    // MARK: CUSTOM INIT
-    /******************************/
-    
-    
-    
-    /*****************************
-     MARK: PRIVATE METHODS
-     ******************************/
-    
-    
-    
-    /*****************************
-     MARK: PUBLIC METHODS
-     ****************************/
-    
+    // MARK: PRIVATE HANDLERS
     
 }
