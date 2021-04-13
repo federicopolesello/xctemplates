@@ -11,7 +11,7 @@ import UIKit
 import SPFoundation
 import SPUIKit
 
-class ___FILEBASENAMEASIDENTIFIER___: UIViewController, SPUIStoryboarded {
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController, SPUIStoryboarded, ___FILEBASENAMEASIDENTIFIER___Protocol {
     
     // MARK: UI COMPONENTS
     

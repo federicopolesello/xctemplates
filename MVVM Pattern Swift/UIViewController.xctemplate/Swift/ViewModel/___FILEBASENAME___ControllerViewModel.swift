@@ -10,22 +10,14 @@
 import Foundation
 import SPFoundation
 
-//protocol ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate: class {
-//    // MARK: To talk with the coordinator
-//}
-
 class ___FILEBASENAMEASIDENTIFIER___ {
 
     // MARK: CONST & VARIABLES
-    // var coordinatorDelegate: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?
     private var dependencies: ___FILEBASENAMEASIDENTIFIER___Dependencies! {
         didSet {}
     }
     
     // MARK: CUSTOM INIT
-//    required init(coordinator: ___FILEBASENAMEASIDENTIFIER___CoordinatorDelegate?) {
-//        self.coordinatorDelegate = coordinator
-//    }
     required init(dependencies: ___FILEBASENAMEASIDENTIFIER___Dependencies) {
         setDependencies(newValue: dependencies)
     }
@@ -34,7 +26,7 @@ class ___FILEBASENAMEASIDENTIFIER___ {
     
 }
 
-extension ___FILEBASENAMEASIDENTIFIER___ : ___FILEBASENAMEASIDENTIFIER___Protocol {
+extension ___FILEBASENAMEASIDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___Protocol {
     
     // MARK: ___FILEBASENAMEASIDENTIFIER___Protocol
     
